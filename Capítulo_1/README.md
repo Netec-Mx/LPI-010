@@ -6,13 +6,13 @@ Al finalizar esta práctica, el estudiante será capaz de identificar la distrib
 3. Tiempo Estimado
 15 a 20 minutos.
 
-## 4. Comandos Relacionados y Recursos
+## Comandos Relacionados y Recursos
 - Comandos: uname, cat, uptime, hostnamectl, clear.
 - Archivos de sistema: /etc/os-release, /proc/version.
 - Recursos: Una terminal con acceso de usuario estándar (no requiere root para la mayoría de los pasos).
 ________________________________________
 
-## 4. Desarrollo del Laboratorio Paso a Paso
+## Desarrollo del Laboratorio Paso a Paso
    
 ### Paso 1: Limpiar el entorno
 Antes de empezar, limpia la pantalla para trabajar con claridad.
