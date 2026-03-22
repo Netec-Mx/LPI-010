@@ -10,33 +10,33 @@ Al finalizar esta práctica, el estudiante será capaz de identificar la distrib
 •	Recursos: Una terminal con acceso de usuario estándar (no requiere root para la mayoría de los pasos).
 ________________________________________
 4. Desarrollo del Laboratorio Paso a Paso
--Paso 1: Limpiar el entorno
+## Paso 1: Limpiar el entorno
 Antes de empezar, limpia la pantalla para trabajar con claridad.
 •	Comando: clear
 •	Resultado esperado: La terminal queda vacía y el cursor se posiciona en la parte superior izquierda.
--Paso 2: Identificar la Distribución
+## Paso 2: Identificar la Distribución
 Linux no es un solo sistema, sino muchas distribuciones. Vamos a ver cuál tienes instalada consultando un archivo de texto estándar.
 •	Comando: cat /etc/os-release
 •	Resultado esperado: Verás varias líneas de texto. Busca las que dicen PRETTY_NAME, ID y VERSION. (Ejemplo: "Ubuntu 24.04 LTS" o "CentOS Stream 9").
--Paso 3: Consultar el Kernel y la Arquitectura
+## Paso 3: Consultar el Kernel y la Arquitectura
 El kernel es el corazón del sistema operativo. Usaremos el comando uname con diferentes modificadores.
 •	Comandos: 1. uname -s (Muestra el nombre del kernel: Linux). 2. uname -r (Muestra la versión exacta del kernel). 3. uname -m (Muestra la arquitectura, ej: x86_64). 4. uname -a (Muestra toda la información anterior en una sola línea).
 •	Resultado esperado: Una cadena de texto similar a Linux 6.x.x-generic x86_64.
--Paso 4: Resumen del Sistema con hostnamectl
+## Paso 4: Resumen del Sistema con hostnamectl
 Este comando moderno proporciona una vista de "pájaro" del sistema, incluyendo el nombre del equipo y el tipo de virtualización si existe.
 •	Comando: hostnamectl
 •	Resultado esperado: Una lista organizada que incluye el "Static hostname", "Icon name", "Chassis", "Operating System", "Kernel" y "Architecture".
--Paso 5: Verificar la Disponibilidad (Uptime)
+## Paso 5: Verificar la Disponibilidad (Uptime)
 Es útil saber cuánto tiempo ha estado funcionando el servidor sin reiniciarse.
 •	Comando: uptime
 •	Resultado esperado: Una línea que indica la hora actual, cuánto tiempo lleva encendido (up), cuántos usuarios hay conectados y el promedio de carga del sistema (load average).
--Paso 6: Explorar la versión según el proceso
+## Paso 6: Explorar la versión según el proceso
 El kernel también expone su información a través de un sistema de archivos virtual llamado /proc.
 •	Comando: cat /proc/version
 •	Resultado esperado: Una línea detallada que indica la versión del kernel y la versión de gcc (el compilador) utilizada para crearlo.
 ________________________________________
 ________________________________________
-Laboratorio 1.2: Exploración de Licencias y Software Libre
+### Laboratorio 1.2: Exploración de Licencias y Software Libre
 1. Objetivo del Laboratorio
 Al finalizar esta práctica, el estudiante podrá identificar qué programas de su sistema son Software Libre, bajo qué licencias específicas operan (GPL, BSD, MIT, etc.) y comprenderá la diferencia práctica entre "Software Libre" y "Código Abierto" mediante la inspección de paquetes instalados.
 2. Tiempo Estimado
