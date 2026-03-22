@@ -7,17 +7,17 @@ Al finalizar esta práctica, el estudiante será capaz de identificar la distrib
 15 a 20 minutos.
 
 ## 4. Comandos Relacionados y Recursos
-- •	Comandos: uname, cat, uptime, hostnamectl, clear.
-- •	Archivos de sistema: /etc/os-release, /proc/version.
-- •	Recursos: Una terminal con acceso de usuario estándar (no requiere root para la mayoría de los pasos).
+- Comandos: uname, cat, uptime, hostnamectl, clear.
+- Archivos de sistema: /etc/os-release, /proc/version.
+- Recursos: Una terminal con acceso de usuario estándar (no requiere root para la mayoría de los pasos).
 ________________________________________
 
 ## 4. Desarrollo del Laboratorio Paso a Paso
    
 ### Paso 1: Limpiar el entorno
 Antes de empezar, limpia la pantalla para trabajar con claridad.
-•	Comando: clear
-•	Resultado esperado: La terminal queda vacía y el cursor se posiciona en la parte superior izquierda.
+-	Comando: clear
+-	Resultado esperado: La terminal queda vacía y el cursor se posiciona en la parte superior izquierda.
 
 ### Paso 2: Identificar la Distribución
 Linux no es un solo sistema, sino muchas distribuciones. Vamos a ver cuál tienes instalada consultando un archivo de texto estándar.
