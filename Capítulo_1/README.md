@@ -1,13 +1,15 @@
 ________________________________________
-Laboratorio 1.1: Identificación y Exploración del Sistema
+### Laboratorio 1.1: Identificación y Exploración del Sistema
 1. Objetivo del Laboratorio
 Al finalizar esta práctica, el estudiante será capaz de identificar la distribución de Linux que está utilizando, la versión del kernel instalada, la arquitectura del hardware y el tiempo que el sistema lleva encendido, utilizando comandos estándar de la terminal.
-2. Tiempo Estimado
+
+3. Tiempo Estimado
 15 a 20 minutos.
-3. Comandos Relacionados y Recursos
-•	Comandos: uname, cat, uptime, hostnamectl, clear.
-•	Archivos de sistema: /etc/os-release, /proc/version.
-•	Recursos: Una terminal con acceso de usuario estándar (no requiere root para la mayoría de los pasos).
+
+## 4. Comandos Relacionados y Recursos
+- •	Comandos: uname, cat, uptime, hostnamectl, clear.
+- •	Archivos de sistema: /etc/os-release, /proc/version.
+- •	Recursos: Una terminal con acceso de usuario estándar (no requiere root para la mayoría de los pasos).
 ________________________________________
 4. Desarrollo del Laboratorio Paso a Paso
    
