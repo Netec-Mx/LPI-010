@@ -10,10 +10,12 @@ Al finalizar esta práctica, el estudiante será capaz de identificar la distrib
 •	Recursos: Una terminal con acceso de usuario estándar (no requiere root para la mayoría de los pasos).
 ________________________________________
 4. Desarrollo del Laboratorio Paso a Paso
+   
 ## Paso 1: Limpiar el entorno
 Antes de empezar, limpia la pantalla para trabajar con claridad.
 •	Comando: clear
 •	Resultado esperado: La terminal queda vacía y el cursor se posiciona en la parte superior izquierda.
+
 ## Paso 2: Identificar la Distribución
 Linux no es un solo sistema, sino muchas distribuciones. Vamos a ver cuál tienes instalada consultando un archivo de texto estándar.
 •	Comando: cat /etc/os-release
