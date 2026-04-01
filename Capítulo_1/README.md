@@ -47,6 +47,7 @@ El kernel también expone su información a través de un sistema de archivos vi
 ________________________________________
 
 ## Laboratorio 1.2: Exploración de Licencias y Software Libre
+
 ### 1. Objetivo del Laboratorio
 Al finalizar esta práctica, el estudiante podrá identificar qué programas de su sistema son Software Libre, bajo qué licencias específicas operan (GPL, BSD, MIT, etc.) y comprenderá la diferencia práctica entre "Software Libre" y "Código Abierto" mediante la inspección de paquetes instalados.
 
@@ -100,7 +101,8 @@ ________________________________________
 ### Resumen para el estudiante:
 Al terminar, el alumno debe notar que Linux es un ecosistema de miles de autores que comparten su trabajo bajo reglas claras.
 ________________________________________
-### Laboratorio 1.3: Navegación por la Ayuda y Documentación (Man, Info y Help)
+
+## Laboratorio 1.3: Navegación por la Ayuda y Documentación (Man, Info y Help)
 
 ### 1. Objetivo del Laboratorio
 
@@ -169,7 +171,8 @@ El estudiante debe comprender que en Linux la ayuda siempre está presente. La j
 
 -	3.	info para detalles técnicos profundos.
 ________________________________________
-### Laboratorio 1.4: Exploración del Shell y Gestión del Historial
+
+## Laboratorio 1.4: Exploración del Shell y Gestión del Historial
 
 ### 1. Objetivo del Laboratorio
 Al finalizar esta práctica, el estudiante podrá identificar el shell que está utilizando, entender el concepto de variables de entorno básicas y dominar el uso del historial de comandos para evitar escribir tareas repetitivas.
@@ -233,7 +236,8 @@ ________________________________________
 ### Resumen para el estudiante:
 El estudiante debe notar que el Shell no es solo una línea de comandos, sino un entorno programable. La combinación de Tab para completar y Ctrl+R para buscar en el historial ahorra horas de trabajo a largo plazo.
 ________________________________________
-### Laboratorio 1.5: Interfaz de Usuario y Terminales Virtuales (TTY)
+
+## Laboratorio 1.5: Interfaz de Usuario y Terminales Virtuales (TTY)
 
 ### 1. Objetivo del Laboratorio
 Al finalizar esta práctica, el estudiante comprenderá el concepto de TTY (TeleTypewriter), sabrá cómo conmutar entre diferentes consolas virtuales del sistema y entenderá la diferencia entre una sesión de terminal en modo texto y el entorno de escritorio gráfico.
