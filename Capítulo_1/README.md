@@ -14,12 +14,12 @@ ________________________________________
 
 ## Desarrollo del Laboratorio Paso a Paso
    
-### Paso 1: Limpiar el entorno
+# Paso 1: Limpiar el entorno
 Antes de empezar, limpia la pantalla para trabajar con claridad.
 -	Comando: clear
 -	Resultado esperado: La terminal queda vacía y el cursor se posiciona en la parte superior izquierda.
 
-### Paso 2: Identificar la Distribución
+# Paso 2: Identificar la Distribución
 Linux no es un solo sistema, sino muchas distribuciones. Vamos a ver cuál tienes instalada consultando un archivo de texto estándar.
 -	Comando: cat /etc/os-release
 -	Resultado esperado: Verás varias líneas de texto. Busca las que dicen PRETTY_NAME, ID y VERSION. (Ejemplo: "Ubuntu 24.04 LTS" o "CentOS Stream 9").
