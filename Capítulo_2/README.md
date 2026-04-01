@@ -254,7 +254,8 @@ echo "Contenido original del archivo A" > archivoA.txt
 ```
 
 ## 3. Tareas del Estudiante
-Tarea A: Creación y Análisis de Inodos
+
+### Tarea A: Creación y Análisis de Inodos
 Crear un enlace físico llamado enlace_fisico apuntando a archivoA.txt.
 
 Crear un enlace simbólico llamado enlace_simbolico apuntando a archivoA.txt.
@@ -263,7 +264,7 @@ Ejecutar el comando ls -li para observar los números de inodo.
 
 Punto de control para el alumno: ¿Qué archivos comparten el mismo número de inodo? ¿Cuál tiene uno diferente?
 
-Tarea B: Persistencia de Datos y Redundancia
+### Tarea B: Persistencia de Datos y Redundancia
 Modificar el contenido de enlace_fisico:
 
 ```bash
@@ -273,7 +274,7 @@ Verificar el contenido de archivoA.txt y de enlace_simbolico.
 
 Pregunta de reflexión: Si todos muestran el mismo contenido, ¿estamos ocupando el triple de espacio en el disco?
 
-Tarea C: Ruptura de Enlaces (Simulación de Incidente)
+### Tarea C: Ruptura de Enlaces (Simulación de Incidente)
 Eliminar el archivo original: rm archivoA.txt.
 
 Intentar leer el contenido de enlace_fisico: cat enlace_fisico.
@@ -282,9 +283,9 @@ Intentar leer el contenido de enlace_simbolico: cat enlace_simbolico.
 
 Observación técnica: El alumno notará que el enlace físico sigue funcionando perfectamente, mientras que el simbólico aparece en rojo (roto/huérfano) porque apuntaba a un nombre, no a un inodo.
 
-## 4. Comandos Clave para Evaluar
-El instructor debe verificar que los alumnos dominen:
+## 4. Comandos clave para recordar:
 
+```
 ln [origen] [destino] (Hard link).
 
 ln -s [origen] [destino] (Soft link).
@@ -292,6 +293,7 @@ ln -s [origen] [destino] (Soft link).
 ls -i (Visualización de inodos).
 
 stat [archivo] (Para ver el contador de enlaces o Links count).
+```
 
 ## 5. Resumen para la Pizarra (Conceptos Core)
 Característica	Enlace Físico (Hard Link)	Enlace Simbólico (Soft Link)
