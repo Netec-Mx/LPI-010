@@ -1,25 +1,25 @@
 ________________________________________
-### Laboratorio 1.1: Identificación y Exploración del Sistema
+## Laboratorio 1.1: Identificación y Exploración del Sistema
 1. Objetivo del Laboratorio
 Al finalizar esta práctica, el estudiante será capaz de identificar la distribución de Linux que está utilizando, la versión del kernel instalada, la arquitectura del hardware y el tiempo que el sistema lleva encendido, utilizando comandos estándar de la terminal.
 
-3. Tiempo Estimado
+### 3. Tiempo Estimado
 15 a 20 minutos.
 
-## Comandos Relacionados y Recursos
+### Comandos Relacionados y Recursos
 - Comandos: uname, cat, uptime, hostnamectl, clear.
 - Archivos de sistema: /etc/os-release, /proc/version.
 - Recursos: Una terminal con acceso de usuario estándar (no requiere root para la mayoría de los pasos).
 ________________________________________
 
-## Desarrollo del Laboratorio Paso a Paso
+### Desarrollo del Laboratorio Paso a Paso
    
-# Paso 1: Limpiar el entorno
+### Paso 1: Limpiar el entorno
 Antes de empezar, limpia la pantalla para trabajar con claridad.
 -	Comando: clear
 -	Resultado esperado: La terminal queda vacía y el cursor se posiciona en la parte superior izquierda.
 
-# Paso 2: Identificar la Distribución
+### Paso 2: Identificar la Distribución
 Linux no es un solo sistema, sino muchas distribuciones. Vamos a ver cuál tienes instalada consultando un archivo de texto estándar.
 -	Comando: cat /etc/os-release
 -	Resultado esperado: Verás varias líneas de texto. Busca las que dicen PRETTY_NAME, ID y VERSION. (Ejemplo: "Ubuntu 24.04 LTS" o "CentOS Stream 9").
@@ -45,24 +45,27 @@ El kernel también expone su información a través de un sistema de archivos vi
 -	Comando: cat /proc/version
 -	Resultado esperado: Una línea detallada que indica la versión del kernel y la versión de gcc (el compilador) utilizada para crearlo.
 ________________________________________
-________________________________________
 
-### Laboratorio 1.2: Exploración de Licencias y Software Libre
-## 1. Objetivo del Laboratorio
+## Laboratorio 1.2: Exploración de Licencias y Software Libre
+### 1. Objetivo del Laboratorio
 Al finalizar esta práctica, el estudiante podrá identificar qué programas de su sistema son Software Libre, bajo qué licencias específicas operan (GPL, BSD, MIT, etc.) y comprenderá la diferencia práctica entre "Software Libre" y "Código Abierto" mediante la inspección de paquetes instalados.
-## 2. Tiempo Estimado
+
+### 2. Tiempo Estimado
 20 a 25 minutos.
-## 3. Comandos Relacionados y Recursos
+
+### 3. Comandos Relacionados y Recursos
 -	Comandos: dpkg (en sistemas Debian/Ubuntu) o rpm (en sistemas RHEL/Fedora), ls, grep, less.
 -	Directorios de sistema: /usr/share/doc/, /usr/share/common-licenses/.
 -	Recursos: Acceso a la terminal y, opcionalmente, una conexión a internet para consultar términos de licencias específicas.
 ________________________________________
-## 4. Desarrollo del Laboratorio Paso a Paso
+### 4. Desarrollo del Laboratorio Paso a Paso
+
 ### Paso 1: Localizar el repositorio de licencias
 En Linux, las licencias de los paquetes instalados suelen guardarse en un lugar centralizado. Vamos a explorar qué licencias "base" reconoce tu sistema.
 
 -	Comando: ls /usr/share/common-licenses/
 -	Resultado esperado: Verás una lista de archivos como GPL-3, Apache-2.0, BSD, Artistic, etc. Estos son los textos legales completos de las licencias más comunes.
+
 ### Paso 2: Identificar la licencia de un comando esencial
 Vamos a investigar bajo qué licencia se distribuye el shell bash, que es el que estás usando ahora mismo.
 
@@ -94,26 +97,27 @@ Busca en el directorio de documentación un paquete que use una licencia permisi
 -	Resultado esperado: Identificar las diferencias clave: mientras la GPL (Copyleft) obliga a compartir los cambios, las licencias como BSD o MIT permiten mayor libertad de integración en software propietario.
 
 ________________________________________
-## Resumen para el estudiante:
+### Resumen para el estudiante:
 Al terminar, el alumno debe notar que Linux es un ecosistema de miles de autores que comparten su trabajo bajo reglas claras.
 ________________________________________
 ### Laboratorio 1.3: Navegación por la Ayuda y Documentación (Man, Info y Help)
 
-## 1. Objetivo del Laboratorio
+### 1. Objetivo del Laboratorio
 
 Al finalizar esta práctica, el estudiante será capaz de consultar la documentación técnica oficial de cualquier comando, buscar opciones específicas dentro de las páginas de manual y diferenciar entre las distintas fuentes de ayuda interna del sistema.
-## 2. Tiempo Estimado
+
+### 2. Tiempo Estimado
 15 a 20 minutos.
 
-## 3. Comandos Relacionados y Recursos
+### 3. Comandos Relacionados y Recursos
 
 -	Comandos: man, info, --help, whatis, apropos.
 
 -	Recursos: Una terminal estándar. No se requiere acceso a internet, ya que la documentación está precargada en el sistema.
 ________________________________________
-## 4. Desarrollo del Laboratorio Paso a Paso
-### Paso 1: Búsqueda por palabras clave con apropos
+### 4. Desarrollo del Laboratorio Paso a Paso
 
+### Paso 1: Búsqueda por palabras clave con apropos
 A veces sabemos qué queremos hacer (ej: "copiar"), pero no recordamos el comando.
 
 -	Comando: apropos "copy files"
@@ -127,7 +131,7 @@ Muchos comandos tienen una ayuda integrada muy veloz para recordar la sintaxis.
 
 -	Resultado esperado: Una salida corta en la terminal que explica las opciones básicas del comando para crear directorios. Busca la opción para crear directorios de forma "parental" o anidada.
 
-## Paso 3: Exploración profunda con man (Manual)
+### Paso 3: Exploración profunda con man (Manual)
 Vamos a entrar en el manual del comando ls.
 
 -	Comando: man ls
@@ -140,7 +144,7 @@ Vamos a entrar en el manual del comando ls.
   
 -	Salida: Presiona la tecla q para salir del manual.
 
-## Paso 4: Navegación avanzada con info
+### Paso 4: Navegación avanzada con info
 El comando info ofrece una estructura de hipervínculos más detallada que man.
 
 -	Comando: info coreutils 'ls invocation'
@@ -149,14 +153,14 @@ El comando info ofrece una estructura de hipervínculos más detallada que man.
 
 -	Acción: Usa las flechas para moverte y la tecla H para ver una lista de comandos de navegación dentro de info. Presiona q para salir.
 
-## Paso 5: Definiciones rápidas con whatis
+### Paso 5: Definiciones rápidas con whatis
 Si solo quieres una descripción de una línea sin leer todo el manual.
 
 -	Comando: whatis rm
 
 -	Resultado esperado: Una respuesta simple como: rm (1) - remove files or directories.
 ________________________________________
-## Resumen para el estudiante:
+### Resumen para el estudiante:
 El estudiante debe comprender que en Linux la ayuda siempre está presente. La jerarquía suele ser:
 
 -	1.	--help para algo rápido.
@@ -167,13 +171,13 @@ El estudiante debe comprender que en Linux la ayuda siempre está presente. La j
 ________________________________________
 ### Laboratorio 1.4: Exploración del Shell y Gestión del Historial
 
-## 1. Objetivo del Laboratorio
+### 1. Objetivo del Laboratorio
 Al finalizar esta práctica, el estudiante podrá identificar el shell que está utilizando, entender el concepto de variables de entorno básicas y dominar el uso del historial de comandos para evitar escribir tareas repetitivas.
 
-## 2. Tiempo Estimado
+### 2. Tiempo Estimado
 15 a 20 minutos.
 
-## 3. Comandos Relacionados y Recursos
+### 3. Comandos Relacionados y Recursos
 
 -	Comandos: echo, history, env, type, alias.
 
@@ -181,7 +185,9 @@ Al finalizar esta práctica, el estudiante podrá identificar el shell que está
   
 -	Recursos: Una terminal de Linux (preferiblemente Bash).
 ________________________________________
-## 4. Desarrollo del Laboratorio Paso a Paso
+
+### 4. Desarrollo del Laboratorio Paso a Paso
+
 ### Paso 1: Identificar el Shell activo
 Existen diferentes tipos de shell (sh, bash, zsh, fish). Vamos a confirmar cuál tienes asignado.
 
@@ -224,18 +230,18 @@ Los alias son "apodos" para comandos largos o frecuentes.
   
 -	Resultado esperado: Se ejecutará ls -lah, que muestra todos los archivos (incluidos ocultos) en formato de lista detallada y con tamaños fáciles de leer.
 ________________________________________
-## Resumen para el estudiante:
+### Resumen para el estudiante:
 El estudiante debe notar que el Shell no es solo una línea de comandos, sino un entorno programable. La combinación de Tab para completar y Ctrl+R para buscar en el historial ahorra horas de trabajo a largo plazo.
 ________________________________________
-#### Laboratorio 1.5: Interfaz de Usuario y Terminales Virtuales (TTY)
+### Laboratorio 1.5: Interfaz de Usuario y Terminales Virtuales (TTY)
 
-## 1. Objetivo del Laboratorio
+### 1. Objetivo del Laboratorio
 Al finalizar esta práctica, el estudiante comprenderá el concepto de TTY (TeleTypewriter), sabrá cómo conmutar entre diferentes consolas virtuales del sistema y entenderá la diferencia entre una sesión de terminal en modo texto y el entorno de escritorio gráfico.
 
-## 2. Tiempo Estimado
+### 2. Tiempo Estimado
 15 a 20 minutos.
 
-## 3. Comandos Relacionados y Recursos
+### 3. Comandos Relacionados y Recursos
 
 -	Comandos: tty, who, w, chvt (opcional).
 
@@ -243,7 +249,7 @@ Al finalizar esta práctica, el estudiante comprenderá el concepto de TTY (Tele
   
 -	Recursos: Una máquina física con Linux o una máquina virtual (en algunas máquinas virtuales, las teclas de función pueden requerir la tecla Fn).
 ________________________________________
-## 4. Desarrollo del Laboratorio Paso a Paso
+### 4. Desarrollo del Laboratorio Paso a Paso
 
 ### Paso 1: Identificar la terminal actual
 Antes de movernos, debemos saber dónde estamos parados.
@@ -281,6 +287,7 @@ Normalmente, el entorno gráfico (X11 o Wayland) corre en la TTY1 o TTY2 (o a ve
 
 -	Resultado esperado: Volverás a ver tu escritorio, ventanas y ratón tal como los dejaste.
 ________________________________________
+
 ## Resumen para el estudiante:
 El estudiante debe aprender que si el entorno gráfico se "congela", siempre puede saltar a una TTY con Ctrl+Alt+F3, iniciar sesión y matar el proceso que causa el problema. Linux es un sistema de múltiples capas.
 ________________________________________
