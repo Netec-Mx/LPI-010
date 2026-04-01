@@ -291,13 +291,6 @@ ls -i (Visualización de inodos).
 stat [archivo] (Para ver el contador de enlaces o Links count).
 ```
 
-## 5. Resumen para la Pizarra (Conceptos Core)
-Característica	Enlace Físico (Hard Link)	Enlace Simbólico (Soft Link)
-Inodo	Comparte el mismo inodo que el original.	Tiene su propio inodo único.
-Cruzar Particiones	No permitido.	Permitido (incluso a otros sistemas).
-Si borras el original	El dato sigue accesible.	El enlace queda roto.
-Directorios	No permitido (por seguridad del kernel).	Permitido.
-
-## 6. Desafío Extra (Opcional)
+## 5. Desafío Extra (Opcional)
 Pide a los alumnos que intenten crear un enlace físico a un directorio y que expliquen el error que devuelve el sistema. Luego, pídeles que hagan lo mismo con un enlace simbólico.
 
