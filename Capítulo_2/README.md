@@ -1,165 +1,274 @@
-Laboratorio 1.2: Exploración de Licencias y Software Libre
-1. Objetivo del Laboratorio
-Al finalizar esta práctica, el estudiante podrá identificar qué programas de su sistema son Software Libre, bajo qué licencias específicas operan (GPL, BSD, MIT, etc.) y comprenderá la diferencia práctica entre "Software Libre" y "Código Abierto" mediante la inspección de paquetes instalados.
+# Laboratorio 1.2: Exploración de Licencias y Software Libre
 
-2. Tiempo Estimado
+## 1. Objetivo del Laboratorio
+Al finalizar esta práctica, el estudiante podrá identificar qué programas de su sistema son Software Libre, bajo qué licencias específicas operan (GPL, BSD, MIT, etc.) y comprenderá la diferencia práctica entre *Software Libre* y *Código Abierto* mediante la inspección de paquetes instalados.
+
+## 2. Tiempo Estimado
 20 a 25 minutos.
 
-3. Comandos Relacionados y Recursos
-Comandos: dpkg (Debian/Ubuntu), rpm (RHEL/Fedora), ls, grep, less.
+## 3. Comandos Relacionados y Recursos
 
-Directorios de sistema: /usr/share/doc/, /usr/share/common-licenses/.
+- **Comandos:** `dpkg` (Debian/Ubuntu), `rpm` (RHEL/Fedora), `ls`, `grep`, `less`
+- **Directorios de sistema:**
+  - `/usr/share/doc/`
+  - `/usr/share/common-licenses/`
+- **Recursos:** Terminal y opcional conexión a internet
 
-Recursos: Acceso a la terminal y, opcionalmente, conexión a internet.
+---
 
-4. Desarrollo del Laboratorio Paso a Paso
-Paso 1: Localizar el repositorio de licencias
-Las licencias "base" que reconoce el sistema suelen guardarse en un lugar centralizado.
+## 4. Desarrollo del Laboratorio Paso a Paso
 
-Comando:
+### Paso 1: Localizar el repositorio de licencias
 
-Bash
-
+```bash
 ls /usr/share/common-licenses/
-Resultado esperado: Verás una lista de archivos como GPL-3, Apache-2.0, BSD, Artistic, etc. Estos son los textos legales completos.
+```
 
-Paso 2: Identificar la licencia de un comando esencial
-Investigaremos el shell bash.
+**Resultado esperado:**  
+Lista de archivos como `GPL-3`, `Apache-2.0`, `BSD`, `Artistic`.
 
-Comando (Debian/Ubuntu):
+---
 
-Bash
+### Paso 2: Identificar la licencia de un comando esencial (bash)
 
+**Debian/Ubuntu:**
+```bash
 cat /usr/share/doc/bash/copyright | less
-Comando (RHEL/Fedora):
+```
 
-Bash
-
+**RHEL/Fedora:**
+```bash
 rpm -qi bash | grep License
-Resultado esperado: El sistema mostrará que bash está bajo la GPLv3. Esto garantiza que el código siempre sea libre.
+```
 
-Paso 3: Investigar una herramienta de red
-Busquemos la licencia de curl.
+**Resultado esperado:**  
+Licencia **GPLv3**.
 
-Comando:
+---
 
-Bash
+### Paso 3: Investigar una herramienta de red (curl)
 
+```bash
 cat /usr/share/doc/curl/copyright | head -n 20
-Resultado esperado: Notarás que la licencia es una variante de MIT/X o curl license. No todo el software libre usa la misma licencia.
+```
 
-Paso 4: Listar licencias de múltiples paquetes instalados
-Generaremos un reporte de los primeros 15 paquetes.
+**Resultado esperado:**  
+Licencia tipo **MIT/X o curl license**.
 
-Comando (Debian/Ubuntu):
+---
 
-Bash
+### Paso 4: Listar licencias de múltiples paquetes
 
+**Debian/Ubuntu:**
+```bash
 dpkg-query -W -f='${Package}: ${Maintainer}\n' | head -n 15
-Comando (RHEL/Fedora):
+```
 
-Bash
-
+**RHEL/Fedora:**
+```bash
 rpm -qa --queryformat '%{NAME}: %{LICENSE}\n' | head -n 15
-Paso 5: El concepto de "Copyleft" vs "Permisivas"
-Busca un paquete con licencia permisiva (ej. openssh-client o util-linux).
+```
 
-Comando sugerido:
+**Resultado esperado:**  
+Lista de paquetes con autor o licencia.
 
-Bash
+---
 
+### Paso 5: Copyleft vs Licencias permisivas
+
+```bash
 ls /usr/share/doc/
-# Luego revisa el archivo copyright de la carpeta elegida
-Resultado esperado: Identificar que mientras la GPL (Copyleft) obliga a compartir los cambios, las licencias como BSD o MIT permiten mayor libertad de integración en software propietario.
+```
 
-Resumen para el estudiante: Linux es un ecosistema de miles de autores que comparten su trabajo bajo reglas claras que protegen o flexibilizan su uso.
+Buscar paquetes como:
+- `openssh-client`
+- `util-linux`
 
-Laboratorio 1.3: Navegación por la Ayuda y Documentación
-1. Objetivo del Laboratorio
-El estudiante será capaz de consultar la documentación técnica oficial (man, info, --help), buscar opciones específicas y diferenciar las fuentes de ayuda interna.
+**Resultado esperado:**  
+- GPL → obliga a compartir cambios (Copyleft)  
+- BSD/MIT → permiten uso en software propietario  
 
-2. Tiempo Estimado
+---
+
+## Resumen para el estudiante
+
+Linux es un ecosistema colaborativo donde miles de autores comparten software bajo distintas licencias con reglas claras.
+
+---
+
+# Laboratorio 1.3: Navegación por la Ayuda y Documentación
+
+## 1. Objetivo del Laboratorio
+El estudiante podrá consultar documentación oficial, buscar opciones específicas y diferenciar entre fuentes de ayuda.
+
+## 2. Tiempo Estimado
 15 a 20 minutos.
 
-3. Comandos Relacionados
-man, info, --help, whatis, apropos.
+## 3. Comandos Relacionados y Recursos
 
-4. Desarrollo del Laboratorio Paso a Paso
-Paso 1: Búsqueda por palabras clave con apropos
-Comando: apropos "copy files"
+- **Comandos:** `man`, `info`, `--help`, `whatis`, `apropos`
+- **Recurso:** Terminal (sin necesidad de internet)
 
-Resultado esperado: Una lista de comandos relacionados. El número entre paréntesis, ej: cp (1), indica la sección del manual (1 = comandos de usuario).
+---
 
-Paso 2: Uso de la ayuda rápida (--help)
-Comando: mkdir --help
+## 4. Desarrollo del Laboratorio Paso a Paso
 
-Resultado esperado: Una salida corta con las opciones básicas. Identifica la opción para crear directorios anidados (parental).
+### Paso 1: Búsqueda con apropos
 
-Paso 3: Exploración profunda con man (Manual)
-Comando: man ls
+```bash
+apropos "copy files"
+```
 
-Acción: Presiona /, escribe human-readable y pulsa Enter. El cursor saltará a la opción -h.
+**Resultado esperado:**  
+Lista de comandos como `cp (1)`.
 
-Salida: Presiona la tecla q.
+---
 
-Paso 4: Navegación avanzada con info
-Comando: info coreutils 'ls invocation'
+### Paso 2: Ayuda rápida
 
-Acción: Usa las flechas para moverte y H para ver la ayuda de navegación. Presiona q para salir.
+```bash
+mkdir --help
+```
 
-Paso 5: Definiciones rápidas con whatis
-Comando: whatis rm
+**Resultado esperado:**  
+Opciones básicas del comando.
 
-Resultado esperado: Una respuesta simple de una sola línea: rm (1) - remove files or directories.
+---
 
-Jerarquía de ayuda para el estudiante:
+### Paso 3: Manual con man
 
---help: Ayuda rápida/sintaxis.
+```bash
+man ls
+```
 
-man: Estándar de uso detallado.
+Acciones:
+- `/human-readable`
+- Enter
+- `q` para salir
 
-info: Detalles técnicos profundos y estructurados.
+---
 
-Laboratorio 1.4: Exploración del Shell y Gestión del Historial
-1. Objetivo del Laboratorio
-Identificar el shell activo, entender variables de entorno básicas y dominar el historial de comandos para optimizar la productividad.
+### Paso 4: Navegación con info
 
-2. Tiempo Estimado
+```bash
+info coreutils 'ls invocation'
+```
+
+Acciones:
+- Flechas para navegar
+- `H` para ayuda
+- `q` para salir
+
+---
+
+### Paso 5: Descripción rápida
+
+```bash
+whatis rm
+```
+
+Resultado esperado:
+```
+rm (1) - remove files or directories
+```
+
+---
+
+## Resumen para el estudiante
+
+Jerarquía de ayuda en Linux:
+
+1. `--help` → rápido  
+2. `man` → estándar  
+3. `info` → detallado  
+
+---
+
+# Laboratorio 1.4: Exploración del Shell y Gestión del Historial
+
+## 1. Objetivo del Laboratorio
+El estudiante podrá identificar el shell, entender variables de entorno y usar el historial eficientemente.
+
+## 2. Tiempo Estimado
 15 a 20 minutos.
 
-3. Comandos y Atajos
-Comandos: echo, history, env, type, alias.
+## 3. Comandos Relacionados y Recursos
 
-Atajos: Tab, Ctrl+R, Flechas.
+- **Comandos:** `echo`, `history`, `env`, `type`, `alias`
+- **Atajos:**
+  - `Tab`
+  - `Ctrl + R`
+  - Flechas ↑ ↓
+- **Recurso:** Terminal Linux (Bash recomendado)
 
-4. Desarrollo del Laboratorio Paso a Paso
-Paso 1: Identificar el Shell activo
-Comando: echo $SHELL
+---
 
-Resultado esperado: Una ruta como /bin/bash o /bin/zsh.
+## 4. Desarrollo del Laboratorio Paso a Paso
 
-Paso 2: Uso del Autocompletado (Tecla Tab)
-Acción: Escribe hostn y presiona Tab.
+### Paso 1: Identificar el shell
 
-Resultado esperado: El shell completará a hostname. (Tab doble muestra todas las opciones disponibles).
+```bash
+echo $SHELL
+```
 
-Paso 3: Gestión del Historial de Comandos
-Comando: history
+**Resultado esperado:**  
+Ejemplo: `/bin/bash`
 
-Acción avanzada: Escribe !n (donde n es el número de un comando de la lista).
+---
 
-Resultado: El sistema ejecutará automáticamente ese comando previo.
+### Paso 2: Autocompletado
 
-Paso 4: Búsqueda inversa con Ctrl+R
-Acción: Presiona Ctrl+R y escribe uname.
+Acción:
+```
+hostn + Tab
+```
 
-Resultado esperado: El shell mostrará el último comando que contenía esa palabra.
+**Resultado esperado:**  
+Se completa a `hostname`.
 
-Paso 5: Creación de un Alias temporal
-Comando: alias ll='ls -lah'
+---
 
-Acción: Ejecuta el nuevo comando escribiendo simplemente ll.
+### Paso 3: Historial de comandos
 
-Resultado esperado: Se ejecutará ls -lah (lista detallada, archivos ocultos y tamaños legibles).
+```bash
+history
+```
 
-Resumen para el estudiante: El Shell es un entorno programable. Dominar el autocompletado (Tab) y la búsqueda en el historial (Ctrl+R) ahorra horas de trabajo a largo plazo.
+Ejecutar comando anterior:
+```bash
+!n
+```
+
+---
+
+### Paso 4: Búsqueda inversa
+
+Acción:
+```
+Ctrl + R
+```
+
+Buscar:
+```
+uname
+```
+
+---
+
+### Paso 5: Crear alias
+
+```bash
+alias ll='ls -lah'
+```
+
+Uso:
+```bash
+ll
+```
+
+---
+
+## Resumen para el estudiante
+
+El shell es un entorno programable.  
+El uso de `Tab` y `Ctrl+R` incrementa significativamente la productividad.
