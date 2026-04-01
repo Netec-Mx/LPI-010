@@ -275,11 +275,10 @@ Verificar el contenido de archivoA.txt y de enlace_simbolico.
 Pregunta de reflexión: Si todos muestran el mismo contenido, ¿estamos ocupando el triple de espacio en el disco?
 
 ### Tarea C: Ruptura de Enlaces (Simulación de Incidente)
-Eliminar el archivo original: rm archivoA.txt.
 
-Intentar leer el contenido de enlace_fisico: cat enlace_fisico.
-
-Intentar leer el contenido de enlace_simbolico: cat enlace_simbolico.
+-- Eliminar el archivo original: rm archivoA.txt.
+-- Intentar leer el contenido de enlace_fisico: cat enlace_fisico.
+-- Intentar leer el contenido de enlace_simbolico: cat enlace_simbolico.
 
 Observación técnica: El alumno notará que el enlace físico sigue funcionando perfectamente, mientras que el simbólico aparece en rojo (roto/huérfano) porque apuntaba a un nombre, no a un inodo.
 
@@ -287,11 +286,8 @@ Observación técnica: El alumno notará que el enlace físico sigue funcionando
 
 ```
 ln [origen] [destino] (Hard link).
-
 ln -s [origen] [destino] (Soft link).
-
 ls -i (Visualización de inodos).
-
 stat [archivo] (Para ver el contador de enlaces o Links count).
 ```
 
