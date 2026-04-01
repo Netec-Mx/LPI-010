@@ -1,4 +1,4 @@
-### Capítulo 3: Gestión de Usuarios, Grupos y Permisos
+# Capítulo 3: Gestión de Usuarios, Grupos y Permisos
 
 ## Laboratorio 3.1: Creación de Cuentas y Grupos
 
