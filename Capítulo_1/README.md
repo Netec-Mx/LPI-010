@@ -1,4 +1,4 @@
-## Laboratorio 1.1: Identificación y Exploración del Sistema
+# Laboratorio 1.1: Identificación y Exploración del Sistema
 
 ## 1. Objetivo del Laboratorio
 Al finalizar esta práctica, el estudiante será capaz de identificar la distribución de Linux que está utilizando, la versión del kernel instalada, la arquitectura del hardware y el tiempo que el sistema lleva encendido, utilizando comandos estándar de la terminal.
@@ -7,43 +7,98 @@ Al finalizar esta práctica, el estudiante será capaz de identificar la distrib
 15 a 20 minutos.
 
 ## 3. Comandos Relacionados y Recursos
-- Comandos: uname, cat, uptime, hostnamectl, clear.
-- Archivos de sistema: /etc/os-release, /proc/version.
-- Recursos: Una terminal con acceso de usuario estándar (no requiere root para la mayoría de los pasos).
-________________________________________
 
-### Desarrollo del Laboratorio Paso a Paso
-   
+- **Comandos:** `uname`, `cat`, `uptime`, `hostnamectl`, `clear`
+- **Archivos de sistema:**
+  - `/etc/os-release`
+  - `/proc/version`
+- **Recursos:** Terminal con acceso de usuario estándar
+
+---
+
+## 4. Desarrollo del Laboratorio Paso a Paso
+
 ### Paso 1: Limpiar el entorno
-Antes de empezar, limpia la pantalla para trabajar con claridad.
--	Comando: clear
--	Resultado esperado: La terminal queda vacía y el cursor se posiciona en la parte superior izquierda.
 
-### Paso 2: Identificar la Distribución
-Linux no es un solo sistema, sino muchas distribuciones. Vamos a ver cuál tienes instalada consultando un archivo de texto estándar.
--	Comando: cat /etc/os-release
--	Resultado esperado: Verás varias líneas de texto. Busca las que dicen PRETTY_NAME, ID y VERSION. (Ejemplo: "Ubuntu 24.04 LTS" o "CentOS Stream 9").
+```bash
+clear
+```
 
-### Paso 3: Consultar el Kernel y la Arquitectura
-El kernel es el corazón del sistema operativo. Usaremos el comando uname con diferentes modificadores.
+**Resultado esperado:**  
+Terminal limpia.
 
--	Comandos: 1. uname -s (Muestra el nombre del kernel: Linux). 2. uname -r (Muestra la versión exacta del kernel). 3. uname -m (Muestra la arquitectura, ej: x86_64). 4. uname -a (Muestra toda la información anterior en una sola línea).
-- Resultado esperado: Una cadena de texto similar a Linux 6.x.x-generic x86_64.
+---
 
-### Paso 4: Resumen del Sistema con hostnamectl
-Este comando moderno proporciona una vista de "pájaro" del sistema, incluyendo el nombre del equipo y el tipo de virtualización si existe.
--	Comando: hostnamectl
--	Resultado esperado: Una lista organizada que incluye el "Static hostname", "Icon name", "Chassis", "Operating System", "Kernel" y "Architecture".
+### Paso 2: Identificar la distribución
 
-### Paso 5: Verificar la Disponibilidad (Uptime)
-Es útil saber cuánto tiempo ha estado funcionando el servidor sin reiniciarse.
--	Comando: uptime
--	Resultado esperado: Una línea que indica la hora actual, cuánto tiempo lleva encendido (up), cuántos usuarios hay conectados y el promedio de carga del sistema (load average).
+```bash
+cat /etc/os-release
+```
 
-### Paso 6: Explorar la versión según el proceso
-El kernel también expone su información a través de un sistema de archivos virtual llamado /proc.
--	Comando: cat /proc/version
--	Resultado esperado: Una línea detallada que indica la versión del kernel y la versión de gcc (el compilador) utilizada para crearlo.
+**Resultado esperado:**  
+Buscar:
+- `PRETTY_NAME`
+- `ID`
+- `VERSION`
+
+---
+
+### Paso 3: Kernel y arquitectura
+
+```bash
+uname -s
+uname -r
+uname -m
+uname -a
+```
+
+**Resultado esperado:**  
+Ejemplo: `Linux 6.x.x-generic x86_64`
+
+---
+
+### Paso 4: Resumen del sistema
+
+```bash
+hostnamectl
+```
+
+**Resultado esperado:**  
+Información de:
+- Hostname
+- OS
+- Kernel
+- Arquitectura
+
+---
+
+### Paso 5: Uptime
+
+```bash
+uptime
+```
+
+**Resultado esperado:**  
+Tiempo encendido, usuarios y load average.
+
+---
+
+### Paso 6: Versión del kernel vía /proc
+
+```bash
+cat /proc/version
+```
+
+**Resultado esperado:**  
+Versión del kernel y compilador.
+
+---
+
+## Resumen para el estudiante
+
+El estudiante debe comprender cómo obtener información crítica del sistema utilizando herramientas estándar de Linux.
+
+---
 
 # Laboratorio 1.2: Exploración de Licencias y Software Libre
 
