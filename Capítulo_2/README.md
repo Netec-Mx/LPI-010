@@ -277,7 +277,9 @@ Pregunta de reflexión: Si todos muestran el mismo contenido, ¿estamos ocupando
 ### Tarea C: Ruptura de Enlaces (Simulación de Incidente)
 
 -- Eliminar el archivo original: rm archivoA.txt.
+
 -- Intentar leer el contenido de enlace_fisico: cat enlace_fisico.
+
 -- Intentar leer el contenido de enlace_simbolico: cat enlace_simbolico.
 
 Observación técnica: El alumno notará que el enlace físico sigue funcionando perfectamente, mientras que el simbólico aparece en rojo (roto/huérfano) porque apuntaba a un nombre, no a un inodo.
