@@ -1,9 +1,3 @@
-Aquí tienes el Capítulo 2 estructurado íntegramente en Markdown. He mantenido la coherencia visual con los capítulos anteriores, optimizando la jerarquía de títulos, bloques de código y tablas para que sea un material de estudio claro y profesional.
-
-Puedes copiar este contenido y guardarlo como Capitulo2_Laboratorios.md:
-
-Markdown
-
 # Capítulo 2: El Sistema de Archivos en Linux
 
 ## Laboratorio 2.1: Exploración de la Jerarquía del Sistema (FHS)
