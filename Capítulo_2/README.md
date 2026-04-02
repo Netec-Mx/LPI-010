@@ -14,14 +14,12 @@ Al finalizar la práctica, serás capaz de:
 
 ## Tiempo estimado
 - xxx minutos.
-
 <br/><br/>
 
 ## Objetivo visual 
 
 La imagen muestra...
 ![diagrama1](../images/img1.png)
-
 <br/><br/>
 
 ## Tabla de Ayuda
@@ -30,11 +28,9 @@ Durante esta práctica...
 
 | Nº | Comando                                               | Descripción                                                                                |Ejemplo de uso               |
 | 1  | | | |
-
 <br/><br/>
 
 ## Instrucciones 
-
 <br/><br/>
 
 ## Laboratorio 2.1: Exploración de la Jerarquía del Sistema (FHS)
