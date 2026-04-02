@@ -1,5 +1,41 @@
 # Capítulo 6: Gestión de Software y Paquetes
+## Objetivos
+Al finalizar la práctica, serás capaz de:
 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
+<br/><br/>
+
+## Tiempo estimado
+- xxx minutos.
+
+<br/><br/>
+
+## Objetivo visual 
+
+La imagen muestra...
+![diagrama1](../images/img1.png)
+
+<br/><br/>
+
+## Tabla de Ayuda
+
+Durante esta práctica...
+
+| Nº | Comando                                               | Descripción                                                                                |Ejemplo de uso               |
+| 1  | | | |
+
+<br/><br/>
+
+## Instrucciones 
+
+<br/><br/>
 ## Laboratorio 6.1: Instalación y Remoción de Software
 
 - **Objetivo**: Dominar el ciclo de vida básico de un servicio de red mediante gestores de alto nivel.
