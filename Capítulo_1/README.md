@@ -1,6 +1,6 @@
 # Capítulo 1: Introducción a Linux y el Entorno de Trabajo
 ## Objetivos
-Al finalizar la práctica, serás capaz de:
+Al finalizar la práctica, serás capaz que es la:
 
 1.1 Identificación del Sistema: Capacidad de extraer datos técnicos clave (distribución, kernel y arquitectura) mediante comandos de terminal.
 
