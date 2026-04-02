@@ -23,10 +23,14 @@ Al finalizar la práctica, serás capaz de manejar la:
 
 ## Tabla de Ayuda
 
-Durante esta práctica...
+### Tipos de Enlaces en Linux
 
-| Nº | Comando                                               | Descripción                                                                                |Ejemplo de uso               |
-| 1  | | | |
+| Característica | Enlace Físico (Hard Link) | Enlace Simbólico (Soft Link) |
+| :--- | :--- | :--- |
+| **Inodo** | Comparte el mismo inodo. | Tiene su propio inodo único. |
+| **Cruzar Particiones** | No permitido. | Permitido. |
+| **Si borras original** | El dato sigue accesible. | El enlace queda roto. |
+| **Directorios** | No permitido. | Permitido. |
 <br/><br/>
 
 ## Instrucciones 
@@ -199,7 +203,6 @@ Durante esta práctica...
 - **Comandos relacionados**: `ln`, `ls -i`, `stat`.
 
 
-
 ### Desarrollo paso a paso:
 
 1.  **Preparación**:
@@ -224,15 +227,6 @@ Durante esta práctica...
     cat enlace_fisico    # Funciona
     cat enlace_simbolico # Error (roto)
     ```
-
-### Resumen de Enlaces
-
-| Característica | Enlace Físico (Hard Link) | Enlace Simbólico (Soft Link) |
-| :--- | :--- | :--- |
-| **Inodo** | Comparte el mismo inodo. | Tiene su propio inodo único. |
-| **Cruzar Particiones** | No permitido. | Permitido. |
-| **Si borras original** | El dato sigue accesible. | El enlace queda roto. |
-| **Directorios** | No permitido. | Permitido. |
 
 ---
 **Desafío Extra**: Intenta crear un enlace físico a un directorio con `ln`. Observa el error del sistema y compáralo creando uno simbólico con `ln -s`.
