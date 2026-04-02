@@ -2,14 +2,15 @@
 ## Objetivos
 Al finalizar la práctica, serás capaz de:
 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+7.1 Configuración de Interfaz: Identificar las tarjetas de red físicas y lógicas, y comprender la asignación de direccionamiento IPv4 y máscaras de subred.
 
+7.2 Pruebas de Conectividad: Diagnosticar la comunicación en la red local y externa utilizando herramientas de rastreo de rutas y latencia.
+
+7.3 Resolución de Nombres (DNS): Comprender la jerarquía de traducción de dominios a IP mediante el análisis de archivos de configuración y consultas a servidores externos.
+
+7.4 Puertos y Servicios: Auditar los sockets activos del sistema para identificar qué procesos están escuchando conexiones entrantes y asegurar el servidor.
+
+7.5 Transferencia de Archivos: Dominar el movimiento de datos entre hosts mediante protocolos cifrados y seguros (SCP y SFTP).
 <br/><br/>
 
 ## Tiempo estimado
