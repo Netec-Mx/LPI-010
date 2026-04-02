@@ -1,5 +1,15 @@
 # Capítulo 2: El Sistema de Archivos en Linux
 
+2.1 Exploración de la Jerarquía (FHS): Comprender la organización estándar del árbol de directorios de Linux para localizar archivos de configuración, ejecutables y logs.
+
+2.2 Manipulación y Comodines: Dominar la creación de estructuras complejas y la gestión masiva de archivos mediante caracteres especiales (*, ?, []).
+
+2.3 Búsqueda Eficiente: Diferenciar y aplicar el uso de locate para búsquedas indexadas rápidas y find para filtrados técnicos avanzados.
+
+2.4 Rutas y Navegación: Perfeccionar el desplazamiento por el sistema mediante el uso experto de rutas absolutas, relativas y atajos de teclado.
+
+2.5 Enlaces e Inodos: Entender la estructura física del disco mediante la creación y diagnóstico de enlaces duros (Hard Links) y simbólicos (Soft Links).
+
 ## Laboratorio 2.1: Exploración de la Jerarquía del Sistema (FHS)
 
 - **Objetivo**: Comprender la organización estándar (FHS), identificando dónde se guardan programas, configuraciones y datos.
