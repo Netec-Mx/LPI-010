@@ -1,5 +1,41 @@
 # Capítulo 1: Introducción a Linux y el Entorno de Trabajo
+## Objetivos
+Al finalizar la práctica, serás capaz de:
 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
+<br/><br/>
+
+## Tiempo estimado
+- xxx minutos.
+
+<br/><br/>
+
+## Objetivo visual 
+
+La imagen muestra...
+![diagrama1](../images/img1.png)
+
+<br/><br/>
+
+## Tabla de Ayuda
+
+Durante esta práctica...
+
+| Nº | Comando                                               | Descripción                                                                                |Ejemplo de uso               |
+| 1  | | | |
+
+<br/><br/>
+
+## Instrucciones 
+
+<br/>
 ## Laboratorio 1.1: Identificación y Exploración del Sistema
 
 - **Objetivo**: Identificar la distribución, versión del kernel, arquitectura y tiempo de encendido del sistema.
