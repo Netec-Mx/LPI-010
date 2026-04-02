@@ -24,10 +24,55 @@ Al finalizar la práctica, serás capaz de:
 
 ## Tabla de Ayuda
 
-Durante esta práctica...
+## Configuración de Interfaces y Direccionamiento
 
-| Nº | Comando                                               | Descripción                                                                                |Ejemplo de uso               |
-| 1  | | | |
+En las distribuciones modernas, el comando `ip` ha sustituido al antiguo `ifconfig`. Es fundamental conocer la sintaxis actual.
+
+| Acción | Comando Moderno (ip) | Comando Clásico |
+| :--- | :--- | :--- |
+| **Ver IPs y Estado** | `ip addr show` | `ifconfig` |
+| **Activar Interfaz** | `sudo ip link set eth0 up` | `ifconfig eth0 up` |
+| **Desactivar Interfaz**| `sudo ip link set eth0 down` | `ifconfig eth0 down` |
+| **Ver Tabla de Rutas** | `ip route show` | `route -n` / `netstat -rn` |
+| **Ver Vecinos (ARP)** | `ip neighbor` | `arp -n` |
+---
+
+## Herramientas de Diagnóstico y Pruebas
+
+Estas herramientas permiten verificar si el tráfico fluye correctamente hacia el exterior.
+
+| Herramienta | Función | Ejemplo de Uso |
+| :--- | :--- | :--- |
+| **ping** | Verificar latencia y conectividad básica. | `ping -c 4 google.com` |
+| **traceroute** | Rastrear el camino (saltos) hacia un destino. | `traceroute 8.8.8.8` |
+| **dig** | Consultar registros DNS detallados. | `dig linux.org` |
+| **host** | Resolución rápida de Nombre a IP y viceversa. | `host google.com` |
+| **nmcli** | Gestionar conexiones en sistemas con NetworkManager.| `nmcli device status` |
+---
+
+## Puertos, Sockets y Servicios Escuchando
+
+Para la seguridad del servidor, es crítico saber qué programas están abriendo puertos hacia la red.
+
+| Comando | Acción Principal | Parámetros Sugeridos |
+| :--- | :--- | :--- |
+| **ss** | Ver estadísticas de sockets (sustituye a netstat). | `ss -tulpn` |
+| **netstat** | Ver conexiones de red y puertos abiertos. | `netstat -pant` |
+| **lsof** | Listar archivos (y puertos) abiertos por procesos. | `sudo lsof -i :80` |
+| **nmap** | Escáner de seguridad y puertos (externo). | `nmap localhost` |
+---
+
+## Transferencia de Archivos y Acceso Remoto
+
+Protocolos seguros para mover datos entre servidores sin exponer contraseñas en texto plano.
+
+| Herramienta | Función | Sintaxis Básica |
+| :--- | :--- | :--- |
+| **ssh** | Acceso remoto seguro a la terminal. | `ssh usuario@servidor` |
+| **scp** | Copia segura de archivos entre hosts. | `scp archivo.txt user@host:/ruta/` |
+| **sftp** | Protocolo de transferencia de archivos sobre SSH. | `sftp usuario@servidor` |
+| **wget** | Descargar archivos directamente desde la web. | `wget https://sitio.com/file.zip` |
+| **curl** | Transferir datos desde/hacia un servidor (API/Web). | `curl -I google.com` |
 <br/><br/>
 
 ## Instrucciones 
