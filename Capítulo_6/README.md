@@ -14,7 +14,7 @@ Al finalizar la práctica, serás capaz de:
 <br/><br/>
 
 ## Tiempo estimado
-- xxx minutos.
+- 70 minutos.
 <br/><br/>
 
 ## Objetivo visual 
