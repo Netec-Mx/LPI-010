@@ -2,26 +2,25 @@
 ## Objetivos
 Al finalizar la práctica, serás capaz de:
 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+6.1 Instalación y Remoción: Dominar el ciclo de vida de las aplicaciones (instalar, desinstalar y purgar) mediante gestores de paquetes de alto nivel.
 
+6.2 Actualización del Sistema: Sincronizar los índices locales con los repositorios remotos y planificar actualizaciones de seguridad sin afectar la estabilidad.
+
+6.3 Gestión de Dependencias: Comprender la jerarquía de librerías compartidas y cómo el sistema resuelve los requisitos de software automáticamente.
+
+6.4 Repositorios Externos (PPA): Ampliar las fuentes de software oficiales para obtener versiones de desarrollo o herramientas no disponibles por defecto.
+
+6.5 Instalación de Bajo Nivel: Gestionar archivos binarios locales (.deb o .rpm) y resolver manualmente conflictos de dependencias mediante dpkg o rpm.
 <br/><br/>
 
 ## Tiempo estimado
 - xxx minutos.
-
 <br/><br/>
 
 ## Objetivo visual 
 
 La imagen muestra...
 ![diagrama1](../images/img1.png)
-
 <br/><br/>
 
 ## Tabla de Ayuda
@@ -29,12 +28,11 @@ La imagen muestra...
 Durante esta práctica...
 
 | Nº | Comando                                               | Descripción                                                                                |Ejemplo de uso               |
-| 1  | | | |
 
+| 1  | | | |
 <br/><br/>
 
 ## Instrucciones 
-
 <br/><br/>
 ## Laboratorio 6.1: Instalación y Remoción de Software
 
