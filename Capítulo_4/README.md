@@ -1,6 +1,7 @@
 # Capítulo 4: Herramientas de Usuario y Redirección
 ## Objetivos
-Al finalizar la práctica, serás capaz de:
+Al finalizar la práctica, serás capaz de manejar:
+
 4.1 Tuberías (Pipes): Aprender a encadenar comandos independientes para crear flujos de procesamiento de datos en tiempo real mediante el operador.
 
 4.2 Redirección de Salida: Dominar el uso de los operadores > y >> para capturar resultados de comandos y almacenarlos en archivos físicos.
