@@ -19,7 +19,7 @@ Al finalizar la práctica, serás capaz de:
 ## Objetivo visual 
 
 La imagen muestra...
-![diagrama1](../images/img1.png)
+![diagrama1](../images/img4.jpg)
 <br/><br/>
 
 ## Tabla de Ayuda
