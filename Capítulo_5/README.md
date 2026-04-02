@@ -2,26 +2,25 @@
 ## Objetivos
 Al finalizar la práctica, serás capaz de:
 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+5.1 Monitoreo de Procesos: Identificar el consumo de recursos en tiempo real y gestionar el ciclo de vida de los programas mediante el envío de señales (SIGTERM, SIGKILL).
 
+5.2 Auditoría de Logs (Journaling): Navegar y filtrar los registros del sistema con journalctl para diagnosticar fallos críticos y eventos del kernel.
+
+5.3 Gestión de Recursos (Memoria/Disco): Interpretar estadísticas de hardware mediante free y df para prevenir caídas por saturación de almacenamiento o memoria RAM.
+
+5.4 Archivado y Compresión: Dominar el empaquetado de archivos con tar y su posterior compresión para optimizar el espacio y facilitar las copias de seguridad.
+
+5.5 Automatización de Tareas (Cron): Programar la ejecución automática de scripts y comandos recurrentes mediante el demonio crontab.
 <br/><br/>
 
 ## Tiempo estimado
 - xxx minutos.
-
 <br/><br/>
 
 ## Objetivo visual 
 
 La imagen muestra...
 ![diagrama1](../images/img1.png)
-
 <br/><br/>
 
 ## Tabla de Ayuda
@@ -30,11 +29,9 @@ Durante esta práctica...
 
 | Nº | Comando                                               | Descripción                                                                                |Ejemplo de uso               |
 | 1  | | | |
-
 <br/><br/>
 
 ## Instrucciones 
-
 <br/><br/>
 ## Laboratorio 5.1: Monitoreo de Procesos (Señales)
 
