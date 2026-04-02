@@ -13,7 +13,7 @@ Al finalizar la práctica, serás capaz de:
 <br/><br/>
 
 ## Tiempo estimado
-- xxx minutos.
+- 75 minutos.
 
 <br/><br/>
 
