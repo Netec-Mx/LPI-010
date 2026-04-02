@@ -24,10 +24,48 @@ Al finalizar la práctica, serás capaz que es la:
 
 ## Tabla de Ayuda
 
-Durante esta práctica...
+## Comandos de Identificación y Sistema
 
-| Nº | Comando                                               | Descripción                                                                                |Ejemplo de uso               |
-| 1  | | | |
+| Categoría | Comando | Acción Principal | Ejemplo de Uso |
+| :--- | :--- | :--- | :--- |
+| **Kernel** | `uname` | Ver versión del núcleo y arquitectura (`-a`). | `uname -r` |
+| **Distribución**| `cat` | Consultar el archivo de identidad del sistema. | `cat /etc/os-release` |
+| **Hardware** | `hostnamectl` | Resumen de nombre de host, SO y arquitectura. | `hostnamectl` |
+| **Tiempo** | `uptime` | Saber cuánto tiempo lleva encendido el servidor. | `uptime` |
+| **Usuarios** | `who` / `w` | Ver quién está conectado y qué está haciendo. | `w` |
+| **Terminal** | `tty` | Identificar en qué terminal (consola) estás. | `tty` |
+| **Limpieza** | `clear` | Limpiar la pantalla de la terminal. | `clear` |
+
+## Herramientas de Ayuda y Documentación
+
+En Linux, la documentación está integrada. Estas herramientas son esenciales para el autoaprendizaje.
+
+| Herramienta | Función | Ejemplo |
+| :--- | :--- | :--- |
+| `--help` | Ayuda rápida y resumen de sintaxis del comando. | `mkdir --help` |
+| `man` | Manual oficial completo (páginas de manual). | `man ls` |
+| `info` | Documentación detallada con hipervínculos. | `info coreutils` |
+| `whatis` | Descripción de una sola línea del comando. | `whatis rm` |
+| `apropos` | Buscar comandos por palabra clave o función. | `apropos "copy"` |
+
+---
+
+## Atajos de Productividad del Shell (Bash)
+
+El Shell no es solo para escribir; tiene funciones que ahorran minutos de trabajo repetitivo.
+
+### Teclas de Acceso Rápido:
+* **Tabulador (Tab)**: **Autocompletado**. Escribe el inicio de un comando o ruta y presiona Tab para que el sistema lo termine por ti.
+* **Ctrl + R**: **Búsqueda inversa**. Escribe una palabra para encontrar un comando que usaste en el pasado.
+* **Flecha Arriba/Abajo**: Navegar por el historial de comandos recientes.
+* **Ctrl + C**: Cancelar o detener el proceso que se está ejecutando actualmente.
+* **Ctrl + L**: Equivalente al comando `clear` (limpia la pantalla).
+
+### Gestión del Historial y Alias:
+* `history` -> Muestra la lista numerada de tus últimos comandos.
+* `!n` -> Ejecuta el comando número "n" del historial.
+* `alias nombre='comando'` -> Crea un apodo para un comando largo.
+    * *Ejemplo:* `alias actualizar='sudo apt update'`
 <br/><br/>
 
 ## Instrucciones 
