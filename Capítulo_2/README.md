@@ -13,7 +13,7 @@ Al finalizar la práctica, serás capaz de:
 2.5 Enlaces e Inodos: Entender la estructura física del disco mediante la creación y diagnóstico de enlaces duros (Hard Links) y simbólicos (Soft Links).
 
 ## Tiempo estimado
-- xxx minutos.
+- 100 minutos.
 <br/><br/>
 
 ## Objetivo visual 
