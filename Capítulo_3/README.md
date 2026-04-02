@@ -23,12 +23,50 @@ Al finalizar la práctica, serás capaz de conocer los siguientes conceptos:
 ![diagrama1](../images/img3.jpg)
 <br/><br/>
 
-## Tabla de Ayuda
+## Tabla de Gestión de Usuarios y Grupos
 
-Durante esta práctica...
+| Categoría | Comando | Acción Principal | Ejemplo de Uso |
+| :--- | :--- | :--- | :--- |
+| **Cuentas** | `useradd` | Crear un nuevo usuario en el sistema. | `sudo useradd -m usuario1` |
+| **Modificación** | `usermod` | Cambiar propiedades (ej. añadir a un grupo). | `sudo usermod -aG sudo usuario1` |
+| **Eliminación** | `userdel` | Borrar usuario (con `-r` borra su /home). | `sudo userdel -r usuario1` |
+| **Grupos** | `groupadd` | Crear un nuevo grupo de trabajo. | `sudo groupadd docentes` |
+| **Grupos** | `groups` | Ver los grupos a los que pertenece un usuario. | `groups usuario1` |
+| **Seguridad** | `passwd` | Cambiar o establecer contraseña. | `sudo passwd usuario1` |
+| **Identidad** | `id` | Ver UID, GID y grupos del usuario. | `id usuario1` |
 
-| Nº | Comando                                               | Descripción                                                                                |Ejemplo de uso               |
-| 1  | | | |
+## Gestión de Permisos y Propiedad
+
+| Categoría | Comando | Acción Principal | Ejemplo de Uso |
+| :--- | :--- | :--- | :--- |
+| **Permisos** | `chmod` | Cambiar permisos de lectura, escritura y ejecución. | `chmod 755 script.sh` |
+| **Propiedad** | `chown` | Cambiar el dueño y el grupo del archivo. | `sudo chown root:root log.txt` |
+| **Privilegios** | `sudo` | Ejecutar un comando con nivel de superusuario. | `sudo apt update` |
+| **Configuración** | `visudo` | Editar `/etc/sudoers` para delegar permisos. | `sudo visudo` |
+
+---
+
+## Cálculo de Permisos (Octal)
+
+Los permisos en Linux se calculan sumando los valores de cada acción para el **Dueño**, el **Grupo** y **Otros**.
+
+### Valores de referencia:
+* **4**: Lectura (`r`)
+* **2**: Escritura (`w`)
+* **1**: Ejecución (`x`)
+* **0**: Sin permisos (`-`)
+
+### Combinaciones comunes:
+* **7** (4+2+1): **Control Total** (rwx).
+* **6** (4+2): **Lectura y Escritura** (rw-).
+* **5** (4+1): **Lectura y Ejecución** (r-x).
+* **4**: **Solo Lectura** (r--).
+
+**Ejemplo de estructura:**
+`chmod 644 archivo.txt`
+1.  **6** (Dueño): Lee y Escribe.
+2.  **4** (Grupo): Solo Lee.
+3.  **4** (Otros): Solo Lee.
 <br/><br/>
 
 ## Instrucciones 
