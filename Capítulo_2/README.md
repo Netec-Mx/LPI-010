@@ -1,4 +1,6 @@
 # Capítulo 2: El Sistema de Archivos en Linux
+## Objetivos
+Al finalizar la práctica, serás capaz de:
 
 2.1 Exploración de la Jerarquía (FHS): Comprender la organización estándar del árbol de directorios de Linux para localizar archivos de configuración, ejecutables y logs.
 
