@@ -1,6 +1,6 @@
 # Capítulo 3: Gestión de Usuarios, Grupos y Permisos
 ## Objetivos
-Al finalizar la práctica, serás capaz de:
+Al finalizar la práctica, serás capaz de conocer los siguientes conceptos:
 
 3.1 Gestión de Cuentas: Aprender a administrar el ciclo de vida de usuarios y grupos (creación, modificación y eliminación) en el sistema.
 
