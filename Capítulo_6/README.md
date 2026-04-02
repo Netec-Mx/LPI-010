@@ -25,11 +25,58 @@ Al finalizar la práctica, serás capaz de:
 
 ## Tabla de Ayuda
 
-Durante esta práctica...
+## Gestión de Paquetes en Debian / Ubuntu (APT)
 
-| Nº | Comando                                               | Descripción                                                                                |Ejemplo de uso               |
+El estándar para distribuciones basadas en Debian. Utiliza repositorios remotos para resolver dependencias automáticamente.
 
-| 1  | | | |
+| Acción | Comando | Notas |
+| :--- | :--- | :--- |
+| **Actualizar Índices** | `sudo apt update` | Sincroniza la lista de paquetes disponibles. |
+| **Instalar** | `sudo apt install <pkg>` | Descarga e instala el software y sus dependencias. |
+| **Eliminar** | `sudo apt remove <pkg>` | Borra el programa pero mantiene configuraciones. |
+| **Purgar** | `sudo apt purge <pkg>` | Borra el programa y todos sus archivos de config. |
+| **Actualizar Sistema** | `sudo apt upgrade` | Instala las versiones más nuevas de todo el software. |
+| **Buscar** | `apt search <texto>` | Busca programas por nombre o descripción. |
+
+---
+
+## Gestión de Paquetes en RHEL / Fedora / CentOS (DNF/YUM)
+
+Utilizado en entornos empresariales y servidores Red Hat. `dnf` es el sucesor moderno de `yum`.
+
+| Acción | Comando | Ejemplo |
+| :--- | :--- | :--- |
+| **Instalar** | `sudo dnf install <pkg>` | `sudo dnf install httpd` |
+| **Eliminar** | `sudo dnf remove <pkg>` | `sudo dnf remove mariadb` |
+| **Actualizar** | `sudo dnf update` | Actualiza todos los paquetes del sistema. |
+| **Info** | `dnf info <pkg>` | Muestra detalles técnicos de un paquete. |
+| **Limpiar Cache** | `dnf clean all` | Borra archivos temporales de descarga. |
+
+---
+
+## Herramientas de Bajo Nivel (Paquetes Locales)
+
+Cuando descargas un archivo `.deb` o `.rpm` directamente, usas estas herramientas que **no** resuelven dependencias automáticamente.
+
+| Formato | Herramienta | Comando de Instalación |
+| :--- | :--- | :--- |
+| **.deb** (Debian) | `dpkg` | `sudo dpkg -i paquete.deb` |
+| **.rpm** (Red Hat) | `rpm` | `sudo rpm -ivh paquete.rpm` |
+
+### Comandos de Consulta (Auditoría):
+* `dpkg -l`: Lista todo el software instalado en sistemas Debian.
+* `rpm -qa`: Lista todo el software instalado en sistemas Red Hat.
+* `which <comando>`: Indica la ruta del binario que se está ejecutando.
+
+---
+
+## Gestión de Repositorios y Código Fuente
+
+| Tarea | Comando / Archivo | Función |
+| :--- | :--- | :--- |
+| **Lista de Fuentes** | `/etc/apt/sources.list` | Archivo donde se definen los repositorios en Ubuntu. |
+| **Añadir PPA** | `add-apt-repository` | Agrega repositorios de terceros en Ubuntu. |
+| **Compilación** | `make` | Herramienta para construir software desde el código fuente. |
 <br/><br/>
 
 ## Instrucciones 
