@@ -3,12 +3,15 @@
 Al finalizar la práctica, serás capaz de:
 
 * 
-* 
-* 
-* 
-* 
-* 
-* 
+1.1 Identificación del Sistema: Capacidad de extraer datos técnicos clave (distribución, kernel y arquitectura) mediante comandos de terminal.
+
+1.2 Exploración de Software Libre: Identificar y diferenciar los tipos de licencias (GPL, BSD, MIT) de los programas instalados en el sistema.
+
+1.3 Navegación por la Ayuda: Dominar el uso de manuales internos (man, info, --help) para resolver dudas técnicas sin soporte externo.
+
+1.4 Gestión del Shell e Historial: Optimizar la productividad mediante el uso de variables de entorno, autocompletado y recuperación de comandos previos.
+
+1.5 Terminales Virtuales (TTY): Comprender la arquitectura multiusuario de Linux y la navegación entre consolas de texto y entorno gráfico.
 
 <br/><br/>
 
