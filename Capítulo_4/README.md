@@ -1,15 +1,15 @@
 # Capítulo 4: Herramientas de Usuario y Redirección
 ## Objetivos
 Al finalizar la práctica, serás capaz de:
+4.1 Tuberías (Pipes): Aprender a encadenar comandos independientes para crear flujos de procesamiento de datos en tiempo real mediante el operador.
 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+4.2 Redirección de Salida: Dominar el uso de los operadores > y >> para capturar resultados de comandos y almacenarlos en archivos físicos.
 
+4.3 Gestión de Errores (stderr): Entender la separación de flujos de datos mediante descriptores de archivo para desviar mensajes de error a archivos de registro específicos.
+
+4.4 Edición con Vim: Desarrollar la destreza necesaria para navegar, editar, buscar y guardar configuraciones utilizando los diferentes modos del editor estándar de Linux.
+
+4.5 Procesamiento de Texto: Aplicar filtros avanzados (cut, sort, uniq, wc) para extraer y organizar información específica de archivos de texto y bases de datos del sistema
 <br/><br/>
 
 ## Tiempo estimado
