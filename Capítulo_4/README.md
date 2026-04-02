@@ -24,7 +24,7 @@ Al finalizar la práctica, serás capaz de manejar:
 
 ## Tabla de Ayuda
 
-## Tabla de Comandos de Procesamiento y Texto
+## Comandos de Procesamiento y Texto
 
 | Categoría | Comando | Acción Principal | Ejemplo de Uso |
 | :--- | :--- | :--- | :--- |
