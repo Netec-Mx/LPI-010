@@ -24,10 +24,53 @@ Al finalizar la práctica, serás capaz de:
 
 ## Tabla de Ayuda
 
-Durante esta práctica...
+## Gestión de Procesos y Señales
 
-| Nº | Comando                                               | Descripción                                                                                |Ejemplo de uso               |
-| 1  | | | |
+| Categoría | Comando | Acción Principal | Ejemplo de Uso |
+| :--- | :--- | :--- | :--- |
+| **Monitor** | `top` | Monitor dinámico de procesos en tiempo real. | `top` |
+| **Monitor** | `htop` | Versión interactiva y visual de top (si está inst.). | `htop` |
+| **Listar** | `ps` | Instantánea de los procesos actuales. | `ps aux` |
+| **Finalizar** | `kill` | Enviar una señal a un proceso mediante su PID. | `kill -15 1234` |
+| **Finalizar** | `pkill` | Finalizar procesos por su nombre. | `pkill nginx` |
+| **Estado** | `uptime` | Ver carga promedio y tiempo de encendido. | `uptime` |
+
+### Señales comunes:
+* **SIGTERM (15)**: Terminación suave. Permite al programa cerrar archivos y limpiar antes de salir.
+* **SIGKILL (9)**: Terminación forzosa. El kernel mata el proceso de inmediato (usar solo si falla el 15).
+
+---
+
+## Diagnóstico de Recursos y Logs
+
+| Recurso | Comando | Función | Ejemplo |
+| :--- | :--- | :--- | :--- |
+| **Memoria** | `free` | Ver uso de RAM y partición de intercambio (SWAP). | `free -h` |
+| **Disco** | `df` | Reporte de espacio disponible en particiones. | `df -h` |
+| **Archivos** | `du` | Estimar el espacio usado por carpetas/archivos. | `du -sh /var` |
+| **Logs** | `journalctl` | Consultar el registro central del sistema (Systemd). | `journalctl -xe` |
+| **Logs** | `tail` | Ver las últimas líneas de un archivo de registro. | `tail -f /var/log/syslog` |
+
+---
+
+## Archivado, Compresión y Automatización
+
+Para respaldos y tareas repetitivas, estos comandos son el estándar en administración.
+
+| Herramienta | Acción | Ejemplo de Uso |
+| :--- | :--- | :--- |
+| **Empaquetar** | `tar` | Crear o extraer un archivo "bola" (archivar). | `tar -cvf backup.tar /etc` |
+| **Comprimir** | `gzip` | Comprimir un archivo (formato .gz). | `gzip archivo.tar` |
+| **Extraer** | `tar -xvf` | Descomprimir y extraer en un solo paso. | `tar -xzvf backup.tar.gz` |
+| **Cron** | `crontab -e` | Editar la tabla de tareas automatizadas. | `crontab -e` 
+
+### Sintaxis de Crontab:
+`* * * * * comando_a_ejecutar`
+1. **Minuto** (0-59)
+2. **Hora** (0-23)
+3. **Día del mes** (1-31)
+4. **Mes** (1-12)
+5. **Día de la semana** (0-6, donde 0 es Domingo)
 <br/><br/>
 
 ## Instrucciones 
