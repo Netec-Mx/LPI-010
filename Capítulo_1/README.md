@@ -35,7 +35,8 @@ Durante esta práctica...
 
 ## Instrucciones 
 
-<br/>
+<br/><br/>
+
 ## Laboratorio 1.1: Identificación y Exploración del Sistema
 
 - **Objetivo**: Identificar la distribución, versión del kernel, arquitectura y tiempo de encendido del sistema.
