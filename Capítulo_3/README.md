@@ -2,6 +2,7 @@
 ## Objetivos
 Al finalizar la práctica, serás capaz de conocer los siguientes conceptos:
 
+
 3.1 Gestión de Cuentas: Aprender a administrar el ciclo de vida de usuarios y grupos (creación, modificación y eliminación) en el sistema.
 
 3.2 Permisos de Archivos (chmod): Dominar el control de acceso mediante las nomenclaturas octal y simbólica para definir quién puede leer, escribir o ejecutar.
