@@ -24,10 +24,49 @@ Al finalizar la práctica, serás capaz de manejar:
 
 ## Tabla de Ayuda
 
-Durante esta práctica...
+## Tabla de Comandos de Procesamiento y Texto
 
-| Nº | Comando                                               | Descripción                                                                                |Ejemplo de uso               |
-| 1  | | | |
+| Categoría | Comando | Acción Principal | Ejemplo de Uso |
+| :--- | :--- | :--- | :--- |
+| **Filtro** | `grep` | Buscar texto específico dentro de un archivo o salida. | `ps aux | grep user1` |
+| **Columnas** | `cut` | Extraer columnas o campos de un texto. | `cut -d: -f1 /etc/passwd` |
+| **Orden** | `sort` | Ordenar líneas de texto alfabética o numéricamente. | `cat lista.txt | sort` |
+| **Únicos** | `uniq` | Eliminar o reportar líneas duplicadas adyacentes. | `sort lista.txt | uniq` |
+| **Contador** | `wc` | Contar líneas (`-l`), palabras (`-w`) o caracteres (`-m`). | `wc -l /etc/hosts` |
+| **Visualizar** | `cat` | Mostrar el contenido completo de un archivo. | `cat /etc/hostname` |
+| **Finales** | `tail` | Ver las últimas líneas de un archivo (útil para logs). | `tail -f /var/log/syslog` |
+
+## Operadores de Redirección y Tuberías
+
+Los operadores permiten controlar hacia dónde fluye la información de los comandos.
+
+| Operador | Nombre | Función | Ejemplo |
+| :--- | :--- | :--- | :--- |
+| `>` | Redirección Simple | Crea un archivo o **sobrescribe** el existente. | `ls > lista.txt` |
+| `>>` | Redirección Append | **Añade** contenido al final del archivo sin borrarlo. | `date >> log.txt` |
+| `2>` | Redirección Error | Captura solo los mensajes de **error**. | `cat secreto 2> error.log` |
+| `|` | Tubería (Pipe) | Envía la salida de un comando como **entrada** de otro. | `cat file | grep "error"` |
+| `/dev/null` | Agujero Negro | Dispositivo especial para **descartar** datos. | `comando > /dev/null 2>&1` |
+
+---
+
+## Comandos Básicos de Supervivencia en Vim
+
+Vim es un editor modal. Para realizar cualquier acción, debes estar en el modo correcto.
+
+### Modos Principales:
+* **Modo Comando (Esc)**: Modo por defecto para navegar y borrar.
+* **Modo Inserción (i)**: Para escribir texto.
+* **Modo Ex (:)**: Para guardar y salir.
+
+### Atajos Esenciales:
+* `:w` -> Guardar (Write).
+* `:q` -> Salir (Quit).
+* `:wq` -> Guardar y salir.
+* `:q!` -> Salir sin guardar (¡Pánico!).
+* `/texto` -> Buscar "texto" hacia adelante.
+* `dd` -> Borrar una línea completa.
+* `u` -> Deshacer el último cambio.
 <br/><br/>
 
 ## Instrucciones 
