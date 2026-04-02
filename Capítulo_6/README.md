@@ -20,7 +20,7 @@ Al finalizar la práctica, serás capaz de:
 ## Objetivo visual 
 
 ![diagrama1](../images/img6.jpg)
-![diagrama1](../images/img6_2.jpg)
+![diagrama1](../images/img6.png)
 <br/><br/>
 
 ## Tabla de Ayuda
