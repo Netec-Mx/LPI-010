@@ -1,5 +1,41 @@
 # Capítulo 5: Sistema Operativo Linux
+## Objetivos
+Al finalizar la práctica, serás capaz de:
 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
+<br/><br/>
+
+## Tiempo estimado
+- xxx minutos.
+
+<br/><br/>
+
+## Objetivo visual 
+
+La imagen muestra...
+![diagrama1](../images/img1.png)
+
+<br/><br/>
+
+## Tabla de Ayuda
+
+Durante esta práctica...
+
+| Nº | Comando                                               | Descripción                                                                                |Ejemplo de uso               |
+| 1  | | | |
+
+<br/><br/>
+
+## Instrucciones 
+
+<br/><br/>
 ## Laboratorio 5.1: Monitoreo de Procesos (Señales)
 
 - **Objetivo**: Identificar procesos costosos y aprender a finalizarlos de forma controlada o forzada.
