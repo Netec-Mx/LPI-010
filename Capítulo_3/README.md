@@ -2,14 +2,15 @@
 ## Objetivos
 Al finalizar la práctica, serás capaz de:
 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+3.1 Gestión de Cuentas: Aprender a administrar el ciclo de vida de usuarios y grupos (creación, modificación y eliminación) en el sistema.
 
+3.2 Permisos de Archivos (chmod): Dominar el control de acceso mediante las nomenclaturas octal y simbólica para definir quién puede leer, escribir o ejecutar.
+
+3.3 Propiedad de Archivos (chown): Entender la transferencia de pertenencia de archivos y directorios entre diferentes usuarios y grupos de trabajo.
+
+3.4 Permisos Especiales (SUID/SGID/Sticky): Configurar entornos de colaboración avanzados y seguros mediante bits de permisos especiales del kernel.
+
+3.5 Elevación de Privilegios (sudo): Implementar la delegación controlada de tareas administrativas mediante la configuración del archivo sudoers.
 <br/><br/>
 
 ## Tiempo estimado
