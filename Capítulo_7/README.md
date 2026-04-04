@@ -1,4 +1,4 @@
-# Capítulo 7: Redes Básicas en Linux
+# Laboratorio 7: Diagnóstico y configuraciones básicas
 ## Objetivos
 Al finalizar la práctica, serás capaz de:
 
