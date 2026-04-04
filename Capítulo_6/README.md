@@ -1,4 +1,4 @@
-# Capítulo 6: Gestión de Software y Paquetes
+# Laboratorio 6: Instalar y actualizar paquetes en una VM/distro seleccionada
 ## Objetivos
 Al finalizar la práctica, serás capaz de:
 
