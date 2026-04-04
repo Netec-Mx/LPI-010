@@ -1,4 +1,4 @@
-# Capítulo 2: El Sistema de Archivos en Linux
+# Laboratorio 2: Navegación y manipulación de archivos en terminal
 ## Objetivos
 Al finalizar la práctica, serás capaz de manejar la:
 
