@@ -1,4 +1,4 @@
-# Capítulo 5: Sistema Operativo Linux
+# Laboratorio 5: Sistema Operativo Linux
 ## Objetivos
 Al finalizar la práctica, serás capaz de:
 
