@@ -1,4 +1,4 @@
-<img width="4623" height="74" alt="image" src="https://github.com/user-attachments/assets/5e512d5e-1dd8-4c69-9380-7cb4ac767e01" /><img src="images/neteclogo (2).png" alt="logo" width="300"/>
+<img src="images/neteclogo (2).png" alt="logo" width="300"/>
 
 # Linux Essentials
 
