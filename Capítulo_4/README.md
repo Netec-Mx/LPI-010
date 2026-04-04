@@ -1,4 +1,4 @@
-# Capítulo 4: Herramientas de Usuario y Redirección
+# Laboratorio 4: Construir pipelines y usar filtros para extraer datos
 ## Objetivos
 Al finalizar la práctica, serás capaz de manejar:
 
