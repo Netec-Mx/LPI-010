@@ -1,4 +1,4 @@
-# Capítulo 1: Introducción a Linux y el Entorno de Trabajo
+# Laboratorio 1: Preparar entorno (Live USB o VM) y explorar la distribución
 ## Objetivos
 Al finalizar la práctica, serás capaz que es la:
 
