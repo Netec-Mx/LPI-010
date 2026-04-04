@@ -1,4 +1,4 @@
-# Capítulo 3: Gestión de Usuarios, Grupos y Permisos
+# Laboratorio 3: Crear usuarios y configurar permisos en archivos y directorios
 ## Objetivos
 Al finalizar la práctica, serás capaz de conocer los siguientes conceptos:
 
