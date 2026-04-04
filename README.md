@@ -55,7 +55,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
   - ⏱️ **Duración estimada**: 80 min
 
 
-### Capítulo 6:Gestión de Software y Paquetes
+### Capítulo 6: Gestión de Software y Paquetes
 
 ### [Laboratorio 6: Instalar y actualizar paquetes en una VM/distro seleccionada](Capítulo_6)
 
