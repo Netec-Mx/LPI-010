@@ -221,13 +221,14 @@ Los permisos en Linux se calculan sumando los valores de cada acción para el **
 
 2.  **Añadir la regla para `user1`** (permitirle reiniciar servicios sin ser root total). Al final del archivo, agregar:
     ```text
-    user1 ALL=(ALL) /usr/bin/systemctl status cron
+    user1 ALL=(ALL) /usr/bin/systemctl restart cron
     ```
 
 3.  **Probar el comando como `user1`**:
     ```bash
-    sudo -u user1
-    sudo systemctl status cron
+    sudo su - user1
+    sudo systemctl restart cron
+    sudo cat /etc/shadow
     ```
 
 **Resultado esperado**: El sistema permitirá a `user1` ejecutar esa línea específica, pero si intenta `sudo cat /etc/shadow`, recibirá un mensaje de "permiso denegado".
