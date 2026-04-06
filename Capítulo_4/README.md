@@ -45,7 +45,7 @@ Los operadores permiten controlar hacia dónde fluye la información de los coma
 | `>` | Redirección Simple | Crea un archivo o **sobrescribe** el existente. | `ls > lista.txt` |
 | `>>` | Redirección Append | **Añade** contenido al final del archivo sin borrarlo. | `date >> log.txt` |
 | `2>` | Redirección Error | Captura solo los mensajes de **error**. | `cat secreto 2> error.log` |
-| `|` | Tubería (Pipe) | Envía la salida de un comando como **entrada** de otro. | `cat file | grep "error"` |
+| `\|` | Tubería (Pipe) | Envía la salida de un comando como **entrada** de otro. | `cat file | grep "error"` |
 | `/dev/null` | Agujero Negro | Dispositivo especial para **descartar** datos. | `comando > /dev/null 2>&1` |
 
 ---
