@@ -146,7 +146,13 @@ Al finalizar la práctica, serás capaz de manejar la:
     ```
 2.  **Actualizar la base de datos**:
     ```bash
-    sudo updatedb
+    # En el caso de que el comando anterior te de un error, solicita el password de root a tu instructor y da los siguientes comandos:
+    # su -
+    passwd: <password de root>
+    # apt install locate
+    # updatedb
+    # exit
+    sudo 
     ```
 3.  **Búsqueda en tiempo real por nombre**:
     ```bash
@@ -181,13 +187,15 @@ Al finalizar la práctica, serás capaz de manejar la:
     pwd
     ```
 2.  **Ruta Relativa** (desde donde estás):
-    * Si estás en `/etc`, ejecuta: `cd ssh`.
+    * Si estás en `/etc`, ejecuta: `cd ../ssh`
+    * pwd
 3.  **Subir niveles**:
     ```bash
     cd ..
     cd ../../
     ```
 4.  **El atajo del Hogar**: `cd ~` o simplemente `cd`.
+
 5.  **El Salto Atrás**:
     ```bash
     cd -
