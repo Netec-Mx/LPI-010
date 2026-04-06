@@ -30,8 +30,8 @@ Al finalizar la práctica, serás capaz de manejar:
 | :--- | :--- | :--- | :--- |
 | **Filtro** | `grep` | Buscar texto específico dentro de un archivo o salida. | `ps aux\|grep user1` |
 | **Columnas** | `cut` | Extraer columnas o campos de un texto. | `cut -d: -f1 /etc/passwd` |
-| **Orden** | `sort` | Ordenar líneas de texto alfabética o numéricamente. | `cat lista.txt | sort` |
-| **Únicos** | `uniq` | Eliminar o reportar líneas duplicadas adyacentes. | `sort lista.txt | uniq` |
+| **Orden** | `sort` | Ordenar líneas de texto alfabética o numéricamente. | `cat lista.txt \| sort` |
+| **Únicos** | `uniq` | Eliminar o reportar líneas duplicadas adyacentes. | `sort lista.txt \| uniq` |
 | **Contador** | `wc` | Contar líneas (`-l`), palabras (`-w`) o caracteres (`-m`). | `wc -l /etc/hosts` |
 | **Visualizar** | `cat` | Mostrar el contenido completo de un archivo. | `cat /etc/hostname` |
 | **Finales** | `tail` | Ver las últimas líneas de un archivo (útil para logs). | `tail -f /var/log/syslog` |
