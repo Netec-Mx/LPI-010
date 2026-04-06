@@ -112,12 +112,13 @@ Los permisos en Linux se calculan sumando los valores de cada acción para el **
 - **Objetivo**: Dominar las dos nomenclaturas de `chmod` para asegurar scripts.
 - **Tiempo estimado**: 10 minutos.
 - **Comandos relacionados**: `chmod`, `ls -l`, `touch`. 
-- **Asegurate de estar en tu directorio de casa `cd`, `pwd`
+- **Asegurate de estar en tu directorio de casa** `cd`, `pwd`
 
 ### Desarrollo paso a paso:
 
 1.  **Preparar el archivo**:
     ```bash
+    cd
     touch script_test.sh
     ```
 
