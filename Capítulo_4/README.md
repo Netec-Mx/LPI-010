@@ -28,7 +28,7 @@ Al finalizar la práctica, serás capaz de manejar:
 
 | Categoría | Comando | Acción Principal | Ejemplo de Uso |
 | :--- | :--- | :--- | :--- |
-| **Filtro** | `grep` | Buscar texto específico dentro de un archivo o salida. | ps aux|grep user1 |
+| **Filtro** | `grep` | Buscar texto específico dentro de un archivo o salida. | `ps aux\|grep user1` |
 | **Columnas** | `cut` | Extraer columnas o campos de un texto. | `cut -d: -f1 /etc/passwd` |
 | **Orden** | `sort` | Ordenar líneas de texto alfabética o numéricamente. | `cat lista.txt | sort` |
 | **Únicos** | `uniq` | Eliminar o reportar líneas duplicadas adyacentes. | `sort lista.txt | uniq` |
