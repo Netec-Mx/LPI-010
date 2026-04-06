@@ -146,13 +146,13 @@ Al finalizar la práctica, serás capaz de manejar la:
     ```
 2.  **Actualizar la base de datos**:
     ```bash
-    # En el caso de que el comando anterior te de un error, solicita el password de root a tu instructor y da los siguientes comandos:
-    # su -
+    En el caso de que el comando anterior te de un error, solicita el password de root a tu instructor y da los siguientes comandos:
+    su -
     passwd: <password de root>
     # apt install locate
     # updatedb
     # exit
-    sudo 
+    Vuelve a probar el comando locate.
     ```
 3.  **Búsqueda en tiempo real por nombre**:
     ```bash
