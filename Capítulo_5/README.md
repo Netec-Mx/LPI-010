@@ -2,7 +2,6 @@
 ## Objetivos
 Al finalizar la práctica, serás capaz de:
 
-
 5.1 Monitoreo de Procesos: Identificar el consumo de recursos en tiempo real y gestionar el ciclo de vida de los programas mediante el envío de señales (SIGTERM, SIGKILL).
 
 5.2 Auditoría de Logs (Journaling): Navegar y filtrar los registros del sistema con journalctl para diagnosticar fallos críticos y eventos del kernel.
